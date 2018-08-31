@@ -1,0 +1,25 @@
+{
+  "name": "redux-thunk-payload",
+  "version": "1.0.1",
+  "description": "redux-thunk for redux-action，follow the flux standard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengbupapapa/redux-thunk-payload.git"
+  },
+  "keywords": [
+    "redux",
+    "thunk",
+    "flux",
+    "standard"
+  ],
+  "author": "dbp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengbupapapa/redux-thunk-payload/issues"
+  },
+  "homepage": "https://github.com/dengbupapapa/redux-thunk-payload#readme"
+}
