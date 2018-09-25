@@ -9,7 +9,7 @@ npm install redux-thunk-payload -S
 
 ```
 //createStore.js
-import thunkMiddleware from '@middleware/reduxThunkPayload';
+import thunkMiddleware from 'redux-thunk-payload';
 let applyMiddlewares = [
     thunkMiddleware,
     ...other middleware
@@ -19,10 +19,10 @@ const enhancer = compose(
     ...composes
 );
 let store = createStore(rootReducer, mergeState, enhancer);
+
 //action.js
 export const actiontor = createActions({
-    reduce:(payload) => request(-payload),
-    add(payload){//如果我们需要结合其它action做操作
+    add(payload){//If we need to do this in conjunction with other actions
         return async function (dispatch){
             dispatch(actiontor.loadingStatus(true));
             let res =  await request(payload);
