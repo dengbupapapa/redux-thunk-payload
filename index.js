@@ -5,10 +5,9 @@ function createThunkMiddleware(extraArgument) {
         if (typeof action.payload === 'function') {
           let nextPayload = action.payload(dispatch, getState, extraArgument);
           if(nextPayload)
-            return next({
-              payload:nextPayload,
-              type:action.type
-            })
+            return next(Object.assign({},action,{
+              payload:nextPayload
+            }))
           else
             return
         }
